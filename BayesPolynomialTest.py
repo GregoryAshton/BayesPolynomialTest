@@ -1,12 +1,11 @@
 import numpy as np
-import scipy.stats as ss
 import matplotlib.pyplot as plt
 from emcee import PTSampler
 import seaborn as sns
 import itertools
 
 
-class BayesFitTest():
+class BayesPolynomialTest():
     def __init__(self, x, y, degrees=[1], ntemps=100, betamin=-6, nburn0=100,
                  nburn=100, nprod=100, nwalkers=100, unif_lim=100):
         self.x = x
