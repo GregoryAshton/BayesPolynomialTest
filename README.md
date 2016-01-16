@@ -23,18 +23,3 @@ test = BayesPolynomialTest(x, y, degrees=[1, 2], ntemps=120, betamin=-6,
 test.diagnostic_plot()
 test.BayesFactor()
 ```
-
-This produces some fake data, fits a linear and quadratic function, generates
-a diagnositic plot, and prints the Bayes factor. For one example the diagnostic
-plot looks like this:
-
-![demo](diagnostic.png)
-
-Then the Bayes factor is:
-
-```bash
-Bayes Factor (Poly of degree 2, Poly of degree 1) = 0.975 +/- 0.0338
-```
-
-This indicates that, in this instance, a quadratic fits the data better than a
-linear fit.
